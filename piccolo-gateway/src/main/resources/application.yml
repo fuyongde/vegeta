@@ -1,0 +1,11 @@
+server:
+  port: 30000
+spring:
+  cloud:
+    gateway:
+      default-filters:
+      routes:
+        - id: test_route
+          uri: http://localhost:8888/api
+          predicates:
+            - Path=/api/*,/api/**

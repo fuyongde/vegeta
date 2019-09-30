@@ -1,0 +1,9 @@
+POST http://localhost:30000/api/hello
+Content-Type: application/json
+
+{
+  "name": "fuyongde",
+  "age": 12
+}
+
+###
